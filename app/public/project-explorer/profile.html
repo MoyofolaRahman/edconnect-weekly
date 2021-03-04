@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <htmml>
+    <head>
+        <meta charset="UTF-8">
+    </head>
     <body>
         <header>
             <h1>Project Explorer</h1>
             <h2>One Stop for Academic Projects</h2>
         </header>
         <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/search.html">Projects</a></li>
-                <li><a href="/login.html">Login</a></li>
-                <li><a href="/register.html"></a>Register</li>
-                <li><a href="/createproject.html">Submit</a></li>
-            </ul>
+                <a href="/index.html">Home</a>
+                <a href="/search.html">Projects</a>
+                <a href="/login.html">Login</a>
+                <a href="/register.html">Register</a>
+                <a href="/createproject.html">Submit</a>
         </nav>
 
         <main>
             <section>
-                <h1>John Doe</h1>
-                <p>john.joe@gmail.com</p>
-            
+                <h3>Moyofola Rahman Tayo</h3>
+                <p>moyofolaabdulrahmon@gmail.com</p>
                 <ul>
                     <li>Program: Computer Science</li>
                     <li>Matric: 00/000</li>
@@ -27,36 +27,49 @@
                 </ul>
             </section>
             <section>
-                <h1>Update Profile</h1>
-                <form >
-                    <input type="text" name="firstName" label="First Name:">
-                    <input type="text" name="lastName" label="Last Name:">
-                    <input type="email" name="email" label="Email Address">
-                    <input type="password" name="password" label="Password">
-                    <input type="text" name="matricNumber" label="Matric Number">
-                    <select name="program" label="Program:">
+                <h2>Update Profile</h2>
+                <form action="profile.html" name="updateProfile">
+                    <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName"><br><br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName"><br><br>
+                    <label for="email">Email Address: </label>
+                    <input type="email" name="email"><br><br>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password"><br><br>
+                    <label for="matricNumber">Matric Number: </label>
+                    <input type="text" name="matricNumber"><br><br>
+                    <label for="program">Program:</label>
+                    <select name="program" id="program">
                         <option value="computer_science"> Computer Science</option>
                         <option value="computer_information_systems"> Computer Information Systems</option>
                         <option value="computer_technology"> Computer Technology</option>
                     </select>
-                    <select name="graduationYear" label="Program:">
+                    <br><br>
+                    <label for="graduationYear">Graduation Year: </label>
+                    <select name="graduationYear" id="graduationYear">
                         <option value="2013">2013</option>
                         <option value="2013">2014</option>
+                        <option value="2013">2015</option>
                         <option value="2013">2016</option>
                         <option value="2013">2017</option>
                         <option value="2013">2018</option>
                         <option value="2013">2019</option>
                         <option value="2013">2020</option>
                     </select>
+                    <br><br>
                     <input type="submit">
                 </form>
             </section>
             <section>
-                <h1>Change Password</h1>
-                <form>
-                    <input type="password" name="password" label="Current Password">
-                    <input type="password" name="password" label="New Password">
-                    <input type="password" name="password" label="Confirm Password">
+                <h2>Change Password</h2>
+                <form action="profile.html" name="changePassword">
+                    <label for="password">Current Password: </label>
+                    <input type="password" name="password"><br><br>
+                    <label for="password">New Password:</label>
+                    <input type="password" name="password"><br><br>
+                    <label for="password">Confirm Password: </label>
+                    <input type="password" name="password"><br><br>
                     <input type="submit">
                 </form>
             </section>

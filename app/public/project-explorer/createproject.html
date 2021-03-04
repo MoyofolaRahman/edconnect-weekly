@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <htmml>
+    <head>
+        <meta charset="UTF-8">
+    </head>
     <body>
         <header>
             <h1>Project Explorer</h1>
             <h2>One Stop for Academic Projects</h2>
         </header>
         <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/search.html">Projects</a></li>
-                <li><a href="/login.html">Login</a></li>
-                <li><a href="/register.html"></a>Register</li>
-                <li><a href="/createproject.html">Submit</a></li>
-            </ul>
+                <a href="/index.html">Home</a>
+                <a href="/search.html">Projects</a>
+                <a href="/login.html">Login</a>
+                <a href="/register.html">Register</a>
+                <a href="/createproject.html">Submit</a>
         </nav>
 
         <main>
             <section>
                 <h1>Submit Project</h1>
-                <form name="submitProject">
-                    <input type="text" name="name" label="Project Name">
-                    <textarea type="text" name="abstract" label="Project Abstract"></textarea>
-                    <input type="text" name="authors" Label="Authors:">
-                    <input type="text" name="tags" Label="Tag(s):">
+                <form action="editproject.html" name="submitProject">
+                    <label for="name">Project Name: </label><br>
+                    <input type="text" name="name"><br><br>
+                    <label for="abstract">Project Abstract: </label><br>
+                    <textarea type="text" name="abstract"></textarea><br><br>
+                    <label for="authorst">Authors: </label><br>
+                    <input type="text" name="authors"><br><br>
+                    <label for="tags">Tags(s): </label><br>
+                    <input type="text" name="tags"><br><br>
                     <input type="submit">
                 </form>
             </section>
