@@ -55,22 +55,22 @@
         <main>    
             <section>
                 <div class="container container-mx-auto " style="width: 75%;">
-                    <form action="register.html" name="signUp" class=" bg-light">
+                    <form action="search.html" class=" bg-light">
                         <div class="form-row">
-                            <div class="form-group col-8">
+                            <div class="form-group col-8 d-flex align-items-center">
                                 <label class="form-label" for="register"></label>
-                                <input class="form-control form-control-lg" type="text" name="register" placeholder=" Project Name, Authors, Abstract, Tags" id="searchBy">
+                                <input class="form-control form-control-lg" type="text" name="searchTerm" placeholder=" Project Name, Authors, Abstract, Tags" id="searchBy">
                             </div>
 
                             <div class="form-group col-1.2">
                                 <button class="form-control btn btn-sm-light" type="search">Search by</button>
                             </div>
                             <div class="form-group col-1.8">
-                                <select id="searchType" class="form-control">
-                                    <option selected>Name</option>
-                                    <option value="Abstract">Abstract</option>
-                                    <option value="Authors">Authors</option>
-                                    <option value="Tags">Tags</option>
+                                <select id="searchType" class="form-control" name="searchType">
+                                    <option selected value="name">Name</option>
+                                    <option value="name">Abstract</option>
+                                    <option value="name">Authors</option>
+                                    <option value="name">Tags</option>
                                 </select>
                             </div>
                             <div class="form-group col-1">
